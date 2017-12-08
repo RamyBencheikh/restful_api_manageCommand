@@ -1,15 +1,15 @@
 {
-  "name": "Project",
+  "name": "Project Manage Command",
   "version": "1.0.0",
-  "description": "An example of Node.Js project",
+  "description": "Api Manage Command",
   "main": "src/bootstrap.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon --exec babel-node --watch ./src",
     "build": "babel ./src --out-dir ./dist --copy-files",
     "eslint": "eslint ./src",
     "eslint-fix": "eslint ./src --fix",
     "doc": "jsdoc ./src -r -d ./documentation",
-    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "author": "BEN CHEIKH Ramy, AUBERT Jean-Marc, DEQUIDT Emmanuel",
   "private": true,
@@ -25,7 +25,7 @@
     "eslint-plugin-import": "^2.8.0",
     "jsdoc": "^3.5.5",
     "mocha": "^4.0.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.5"
   },
   "dependencies": {
     "express": "^4.16.2",
