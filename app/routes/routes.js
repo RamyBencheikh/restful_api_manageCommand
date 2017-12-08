@@ -64,7 +64,7 @@ module.exports = function(app) {
     app.delete('/order/:idOrder/line/:idLine',  orderline.delete_an_orderline);
 
     /**Modify a orderline*/
-    app.put('/orderline/idOrder/line/:idLine', oderline.modify_an_orderline);
+    app.put('/orderline/idOrder/line/:idLine', orderline.modify_an_orderline);
 
     /**
      * Metier Routes

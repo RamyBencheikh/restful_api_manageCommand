@@ -9,7 +9,7 @@
     "eslint": "eslint ./src",
     "eslint-fix": "eslint ./src --fix",
     "doc": "jsdoc ./src -r -d ./documentation",
-    "test": "mocha --compilers js:babel-core/register --recursive"
+    "test": "mocha --compilers js:babel-core/register --recursive",
   },
   "author": "BEN CHEIKH Ramy, AUBERT Jean-Marc, DEQUIDT Emmanuel",
   "private": true,
