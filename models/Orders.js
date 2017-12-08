@@ -1,12 +1,19 @@
-/** inclusion of the Mongoose module and mongoose-double module*/
+/**
+ * Inclusion of the Mongoose module and mongoose-double module
+ * @type {mongoose}
+ * @type {mongoose-double}
+ */
 const mongoose =require('mongoose')
     require('mongoose-double')(mongoose);
 
 const SchemaTypes = mongoose.Schema.Types;
 
-const states = ['draft', 'confirmed'];
-
-/** We create a schema order that we use to define the types of variables and structure our data*/
+/**
+ * Order Model
+ * ------------
+ *
+ * @type {mongoose.Schema} - We create a schema order that we use to define the types of variables and structure our data
+ */
 const orderSchema = new mongoose.Schema({
      code : String,
      date : { type : Date, default : Date.now},
