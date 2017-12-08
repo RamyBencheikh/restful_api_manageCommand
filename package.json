@@ -4,13 +4,12 @@
   "description": "An example of Node.Js project",
   "main": "src/bootstrap.js",
   "scripts": {
-    "start": "nodemon --exec babel-node --watch ./src",
+    "start": "nodemon server.js",
     "build": "babel ./src --out-dir ./dist --copy-files",
     "eslint": "eslint ./src",
     "eslint-fix": "eslint ./src --fix",
     "doc": "jsdoc ./src -r -d ./documentation",
     "test": "mocha --compilers js:babel-core/register --recursive"
-    "start": "nodemon server.js"
   },
   "author": "BEN CHEIKH Ramy, AUBERT Jean-Marc, DEQUIDT Emmanuel",
   "private": true,
